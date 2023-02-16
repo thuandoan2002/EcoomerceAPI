@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Version 8 MySQL hiberante-cfg.xml example for Hibernate 5 -->
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <!-- property name="connection.driver_class">com.mysql.jdbc.Driver</property -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/eCommerce</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456a@</property>
+        <property name="connection.pool_size">3</property>
+        <!--property name="dialect">org.hibernate.dialect.MySQLDialect</property-->
+        <property name="current_session_context_class">thread</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="cmcglobal.vn.ecommerce.entity.UserEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthCodeEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OrderDetailEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OrdersEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.CartEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.CartItemEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.CartEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.CartItemEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.ColorEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.DiscountEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OauthAccessTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OauthApprovalsEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OauthClientDetailsEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OauthClientTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OauthCodeEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OauthRefreshTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OrderDetailEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.OrdersEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.PasswordResetTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.ProductEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.ProductCategoryEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.ProductVariantEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.UserEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entitybk.VerificationTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.CartEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.CartItemEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ColorEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.DiscountEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthAccessTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthApprovalsEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthClientDetailsEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthClientTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthCodeEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthRefreshTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OrderDetailEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OrdersEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.PasswordResetTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ProductEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ProductCategoryEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ProductVariantEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.UserEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.VerificationTokenEntityBk"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ColorEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.DiscountEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthAccessTokenEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthApprovalsEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthClientDetailsEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthClientTokenEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.OauthRefreshTokenEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.PasswordResetTokenEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ProductEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ProductCategoryEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.ProductVariantEntity"/>
+        <mapping class="cmcglobal.vn.ecommerce.entity.VerificationTokenEntity"/>
+        <!-- mapping class="com.mcnz.jpa.examples.Player" / -->
+    </session-factory>
+</hibernate-configuration>
